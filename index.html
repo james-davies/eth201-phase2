@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Coinflip</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./abi.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <h2>CoinFlip DApp</h2>
+
+      <br>
+
+      <h4>Stats:</h4>
+      <div>
+        Max Bet: <span id="maxcost_output"></span> ETH
+      </div>
+
+      <div>
+        Your Balance: <span id="user_balance_output"></span> ETH
+      </div>
+
+      <div>
+        Contract Balance: <span id="contract_balance_output"></span> ETH
+      </div>
+
+      <div>
+        User Balance (in contract): <span id="available_user_balance_output"></span> ETH
+      </div>
+
+      <br>
+      <div >
+      <input type="text" id="deposit_amount" name="depoistAmount" placeholder="Deposit in ETH"><br><br>
+      <div/>
+
+      <button id="btn_deposit" type="button" name="btnDeposit">Deposit</button>
+      <br><br>
+      <button id="btn_withdraw" type="button" name="btnWithdraw">Withdraw</button>
+      <br><br>
+
+      <h2>Your Bet:</h2>
+
+      <div >
+      <div>
+        <select class="custom-select mr-sm-2" id="bet_selection">
+          <option selected value="1">Heads</option>
+          <option value="0">Tails</option>
+          <br>
+      </select>
+
+      <div/>
+      <div>
+        <br>
+        <input type="text" id="bet_amount" name="betAmount" placeholder="deposit in ETH">
+        <button type="button" id="btn_bet">Place Bet</button>
+
+      </div>
+      <br>
+      <h1 id="result"></h1>
+
+
+    </div>
+
+  </body>
+</html>
